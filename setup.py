@@ -12,6 +12,7 @@ setup(
     package_data={
         "emmo_cfd.inferred": ["*"],
         "emmo_cfd.sparql": ["*"],
+	"emmo_cfd.yml": ["*"],
         "emmo_cfd": ["*"],
     },
     python_requires=">=3.6",
