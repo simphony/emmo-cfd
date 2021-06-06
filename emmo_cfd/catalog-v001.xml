@@ -32,5 +32,6 @@
         <uri name="http://emmo.info/emmo/1.0.0-beta/application/meshing"  uri="./meshing.ttl"/>
         <uri name="http://emmo.info/emmo/1.0.0-beta/application/filesystem"  uri="./filesystem.ttl"/>
         <uri name="http://emmo.info/emmo/1.0.0-beta/application/moldmodelling"  uri="./moldmodelling.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta/application/cufd_base"  uri="./cfd_base.ttl"/>
     </group>
 </catalog>
