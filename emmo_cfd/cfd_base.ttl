@@ -15,23 +15,55 @@
                                                 https://creativecommons.org/licenses/by/4.0/legalcode""" .
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  http://emmo.info/emmo/application/cfd_base#EMMO_02b31148-f871-4eb2-b723-51847d40c6f8
+:EMMO_02b31148-f871-4eb2-b723-51847d40c6f8 rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf :EMMO_532e7258-9b12-4dd8-b4ee-5b097fab8370 ;
+                                           rdfs:range :EMMO_f17133c2_bb33_4ffd_89fa_eef2b403d5e6 ;
+                                           skos:prefLabel "hasNumberOfXElements"@en .
+
+
+###  http://emmo.info/emmo/application/cfd_base#EMMO_532e7258-9b12-4dd8-b4ee-5b097fab8370
+:EMMO_532e7258-9b12-4dd8-b4ee-5b097fab8370 rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf :EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                           rdfs:range :EMMO_f17133c2_bb33_4ffd_89fa_eef2b403d5e6 ;
+                                           skos:prefLabel "hasNumberOfElements"@en .
+
+
+###  http://emmo.info/emmo/application/cfd_base#EMMO_7333da63-6fde-4e23-a6fb-c832e2065003
+:EMMO_7333da63-6fde-4e23-a6fb-c832e2065003 rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf :EMMO_532e7258-9b12-4dd8-b4ee-5b097fab8370 ;
+                                           rdfs:range :EMMO_f17133c2_bb33_4ffd_89fa_eef2b403d5e6 ;
+                                           skos:prefLabel "hasNumberOfYElements"@en .
+
+
+###  http://emmo.info/emmo/application/cfd_base#EMMO_78c8c64a-fe41-498d-b7e4-576dc0bbfde1
+:EMMO_78c8c64a-fe41-498d-b7e4-576dc0bbfde1 rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf :EMMO_532e7258-9b12-4dd8-b4ee-5b097fab8370 ;
+                                           rdfs:range :EMMO_f17133c2_bb33_4ffd_89fa_eef2b403d5e6 ;
+                                           skos:prefLabel "hasNumberOfZElements"@en .
+
+
+#################################################################
 #    Classes
 #################################################################
 
-###  http://emmo.info/emmo/application/cfd_base#EMMO_057d91ec-f907-41b3-b683-a4fe670289e2
+###  http://emmo.info/emmo#EMMO_057d91ec-f907-41b3-b683-a4fe670289e2
 :EMMO_057d91ec-f907-41b3-b683-a4fe670289e2 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_aca5c517-4e8b-4943-837b-abc60ccb0c34 ,
                                                            :EMMO_c6c448d3-5c6a-4a4f-910e-0323da228dc3 ;
                                            skos:prefLabel "CommandFlag"@en .
 
 
-###  http://emmo.info/emmo/application/cfd_base#EMMO_1cd31fc4-43e3-48aa-a743-2336bc24a2d5
+###  http://emmo.info/emmo#EMMO_1cd31fc4-43e3-48aa-a743-2336bc24a2d5
 :EMMO_1cd31fc4-43e3-48aa-a743-2336bc24a2d5 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_64aba1e5_24b7_4140_8eb4_676c35698e79 ;
                                            skos:prefLabel "OpenFOAM"@en .
 
 
-###  http://emmo.info/emmo/application/cfd_base#EMMO_25661ffe-3cb9-47ca-8214-1747c41f9fb6
+###  http://emmo.info/emmo#EMMO_25661ffe-3cb9-47ca-8214-1747c41f9fb6
 :EMMO_25661ffe-3cb9-47ca-8214-1747c41f9fb6 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_c5e896c3-9a19-4242-ba7f-74a8146c1bbf ,
                                                            [ rdf:type owl:Restriction ;
@@ -41,13 +73,13 @@
                                            skos:prefLabel "CommandLineInput"@en .
 
 
-###  http://emmo.info/emmo/application/cfd_base#EMMO_33bd4cf3-d6c2-41e7-8293-16ce978389b0
+###  http://emmo.info/emmo#EMMO_33bd4cf3-d6c2-41e7-8293-16ce978389b0
 :EMMO_33bd4cf3-d6c2-41e7-8293-16ce978389b0 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_cdad21c7-082c-435a-94fd-318350978c8f ;
                                            skos:prefLabel "Keyword"@en .
 
 
-###  http://emmo.info/emmo/application/cfd_base#EMMO_3c7da577-6506-4056-8380-93ab07261cbb
+###  http://emmo.info/emmo#EMMO_3c7da577-6506-4056-8380-93ab07261cbb
 :EMMO_3c7da577-6506-4056-8380-93ab07261cbb rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_67e2cddc_3dbe_40a0_8662_1f63a184b722 ,
                                                            [ rdf:type owl:Restriction ;
@@ -61,52 +93,72 @@
                                            skos:prefLabel "CommandLineInterfaceProcess"@en .
 
 
-###  http://emmo.info/emmo/application/cfd_base#EMMO_44bf8de7-3ed4-4007-b7d6-756c4497142d
+###  http://emmo.info/emmo#EMMO_44bf8de7-3ed4-4007-b7d6-756c4497142d
 :EMMO_44bf8de7-3ed4-4007-b7d6-756c4497142d rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_8681074a_e225_4e38_b586_e85b0f43ce38 ;
                                            skos:prefLabel "CommandLineInterface"@en .
 
 
-###  http://emmo.info/emmo/application/cfd_base#EMMO_55b1de31-cba4-4b21-a237-9c983aae4768
+###  http://emmo.info/emmo#EMMO_55b1de31-cba4-4b21-a237-9c983aae4768
 :EMMO_55b1de31-cba4-4b21-a237-9c983aae4768 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_67e2cddc_3dbe_40a0_8662_1f63a184b722 ;
                                            skos:prefLabel "PreProcessing"@en .
 
 
-###  http://emmo.info/emmo/application/cfd_base#EMMO_65f1a9da-d965-4a43-a4ea-6bca1d8e7d71
+###  http://emmo.info/emmo#EMMO_65f1a9da-d965-4a43-a4ea-6bca1d8e7d71
 :EMMO_65f1a9da-d965-4a43-a4ea-6bca1d8e7d71 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_67e2cddc_3dbe_40a0_8662_1f63a184b722 ;
                                            skos:prefLabel "PostProcessing"@en .
 
 
-###  http://emmo.info/emmo/application/cfd_base#EMMO_aca5c517-4e8b-4943-837b-abc60ccb0c34
+###  http://emmo.info/emmo#EMMO_aca5c517-4e8b-4943-837b-abc60ccb0c34
 :EMMO_aca5c517-4e8b-4943-837b-abc60ccb0c34 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_33bd4cf3-d6c2-41e7-8293-16ce978389b0 ;
                                            skos:prefLabel "Command"@en .
 
 
-###  http://emmo.info/emmo/application/cfd_base#EMMO_b3b2c680-2d77-4474-aba3-fc2d1ae414d7
+###  http://emmo.info/emmo#EMMO_b3b2c680-2d77-4474-aba3-fc2d1ae414d7
 :EMMO_b3b2c680-2d77-4474-aba3-fc2d1ae414d7 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_44bf8de7-3ed4-4007-b7d6-756c4497142d ;
                                            skos:prefLabel "Bash"@en .
 
 
-###  http://emmo.info/emmo/application/cfd_base#EMMO_bfac5a6f-9bd9-4eb0-9b27-062f1ec0211a
+###  http://emmo.info/emmo#EMMO_bfac5a6f-9bd9-4eb0-9b27-062f1ec0211a
 :EMMO_bfac5a6f-9bd9-4eb0-9b27-062f1ec0211a rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_f5a64060_4e3f_4d49_98da_9f41ad8d3ce1 ;
                                            skos:prefLabel "UseCase"@en .
 
 
-###  http://emmo.info/emmo/application/cfd_base#EMMO_c5e896c3-9a19-4242-ba7f-74a8146c1bbf
+###  http://emmo.info/emmo#EMMO_c5e896c3-9a19-4242-ba7f-74a8146c1bbf
 :EMMO_c5e896c3-9a19-4242-ba7f-74a8146c1bbf rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_cdad21c7-082c-435a-94fd-318350978c8f ;
                                            skos:prefLabel "DataComposition"@en .
 
 
-###  http://emmo.info/emmo/application/cfd_base#EMMO_c6c448d3-5c6a-4a4f-910e-0323da228dc3
+###  http://emmo.info/emmo#EMMO_c6c448d3-5c6a-4a4f-910e-0323da228dc3
 :EMMO_c6c448d3-5c6a-4a4f-910e-0323da228dc3 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_cdad21c7-082c-435a-94fd-318350978c8f ;
                                            skos:prefLabel "Option"@en .
+
+
+###  http://emmo.info/emmo/application/cfd_base#EMMO_2c59bf43-7b1e-44a9-8853-2694498b5ab0
+:EMMO_2c59bf43-7b1e-44a9-8853-2694498b5ab0 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_406f9b74_c927_4e05_b9af_5edbe5e280c5 ,
+                                                           :EMMO_cdad21c7-082c-435a-94fd-318350978c8f ;
+                                           skos:prefLabel "DirectorySequence"@en .
+
+
+###  http://emmo.info/emmo/application/cfd_base#EMMO_543f77d9-4717-4045-99b5-2568e1d73e6e
+:EMMO_543f77d9-4717-4045-99b5-2568e1d73e6e rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_406f9b74_c927_4e05_b9af_5edbe5e280c5 ,
+                                                           :EMMO_cdad21c7-082c-435a-94fd-318350978c8f ;
+                                           skos:prefLabel "KeywordSequence"@en .
+
+
+###  http://emmo.info/emmo/application/cfd_base#EMMO_ecc3715c-5906-4ba6-9283-c3c19d5058f3
+:EMMO_ecc3715c-5906-4ba6-9283-c3c19d5058f3 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_4362d8c4-c332-43d8-bf90-a179b18f6238 ;
+                                           skos:prefLabel "Dictionary"@en .
 
 
 ###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

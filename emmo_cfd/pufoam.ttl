@@ -1,0 +1,152 @@
+@prefix : <http://emmo.info/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://emmo.info/emmo/application/pufoam> .
+
+<http://emmo.info/emmo/application/pufoam> rdf:type owl:Ontology ;
+                                            owl:versionIRI <http://emmo.info/emmo/1.0.0-beta/application/pufoam> ;
+                                            owl:imports <http://emmo.info/emmo/1.0.0-beta/application/cfd_base> ;
+                                            :EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc """EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+                                                https://creativecommons.org/licenses/by/4.0/legalcode""" .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://emmo.info/emmo/application/pufoam#DynamicViscosityDimension
+:DynamicViscosityDimension rdf:type owl:Class ;
+                           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :EMMO_23b579e1_8088_45b5_9975_064014026c42 ;
+                                                 owl:hasValue "T-1 L-1 M+1 I0 Θ0 N0 J0"
+                                               ] ;
+                           rdfs:subClassOf :EMMO_9895a1b4_f0a5_4167_ac5e_97db40b8bfcc .
+
+
+###  http://emmo.info/emmo/application/pufoam#EMMO_20b61caf-2167-4572-bc3c-226a94b8ee38
+:EMMO_20b61caf-2167-4572-bc3c-226a94b8ee38 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_c204c9a2-2ae0-4b74-a75d-d28d199ad2dd ;
+                                           skos:prefLabel "BlowingReaction"@en .
+
+
+###  http://emmo.info/emmo/application/pufoam#EMMO_32f0cf31-4949-4f40-9c1c-bc678454f240
+:EMMO_32f0cf31-4949-4f40-9c1c-bc678454f240 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 ;
+                                                             owl:someValuesFrom :EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978
+                                                           ] ;
+                                           skos:prefLabel "MomentOrderZero"@en .
+
+
+###  http://emmo.info/emmo/application/pufoam#EMMO_3aa4771d-e45d-4e7f-827e-7c235429b11c
+:EMMO_3aa4771d-e45d-4e7f-827e-7c235429b11c rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_68390bfb_e307_479d_8f78_d66d8773cb1d ;
+                                           skos:prefLabel "BlowingAgent"@en .
+
+
+###  http://emmo.info/emmo/application/pufoam#EMMO_5f8e4416-12e3-4f31-baff-ab35cea5b636
+:EMMO_5f8e4416-12e3-4f31-baff-ab35cea5b636 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 ;
+                                                             owl:someValuesFrom :EMMO_c9729cd8-a47f-45c5-a957-996b7cb66c27
+                                                           ] ;
+                                           skos:prefLabel "DynamicViscosity"@en .
+
+
+###  http://emmo.info/emmo/application/pufoam#EMMO_69e0f417-ec91-4da5-9797-77f812ee6c3b
+:EMMO_69e0f417-ec91-4da5-9797-77f812ee6c3b rdf:type owl:Class ;
+                                           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :EMMO_23b579e1_8088_45b5_9975_064014026c42 ;
+                                                                 owl:hasValue "T0 L-1 M0 I0 Θ0 N0 J0"
+                                                               ] ;
+                                           rdfs:subClassOf :EMMO_9895a1b4_f0a5_4167_ac5e_97db40b8bfcc ;
+                                           skos:prefLabel "PerMeterDimension"@en .
+
+
+###  http://emmo.info/emmo/application/pufoam#EMMO_75debf17-b480-4bf0-aa48-eca49bb47fc5
+:EMMO_75debf17-b480-4bf0-aa48-eca49bb47fc5 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_68390bfb_e307_479d_8f78_d66d8773cb1d ;
+                                           skos:prefLabel "Polyol"@en .
+
+
+###  http://emmo.info/emmo/application/pufoam#EMMO_7d2e3f23-4c37-4363-997a-3939cdcb5c1b
+:EMMO_7d2e3f23-4c37-4363-997a-3939cdcb5c1b rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
+                                           skos:prefLabel "GellingPoint"@en .
+
+
+###  http://emmo.info/emmo/application/pufoam#EMMO_833e035e-d484-4a50-825f-568d734e9028
+:EMMO_833e035e-d484-4a50-825f-568d734e9028 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_c204c9a2-2ae0-4b74-a75d-d28d199ad2dd ;
+                                           skos:prefLabel "GellingReaction"@en .
+
+
+###  http://emmo.info/emmo/application/pufoam#EMMO_a0354ae9-64f7-4bb6-91c2-9fe33f2aafe3
+:EMMO_a0354ae9-64f7-4bb6-91c2-9fe33f2aafe3 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_12d4ba9b_2f89_4ea3_b206_cd376f96c875 ;
+                                           skos:prefLabel "LatentHeat"@en .
+
+
+###  http://emmo.info/emmo/application/pufoam#EMMO_a17d3582-e912-44c8-a4a4-2f2cd03370b0
+:EMMO_a17d3582-e912-44c8-a4a4-2f2cd03370b0 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_68390bfb_e307_479d_8f78_d66d8773cb1d ;
+                                           skos:prefLabel "Solvent"@en .
+
+
+###  http://emmo.info/emmo/application/pufoam#EMMO_a1b179da-bda5-4e4b-b421-0713335bb190
+:EMMO_a1b179da-bda5-4e4b-b421-0713335bb190 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 ;
+                                                             owl:someValuesFrom :EMMO_b3d3542b-ec57-4e91-8f4d-4b5054f9e191
+                                                           ] ;
+                                           skos:prefLabel "MomentOrderOne"@en .
+
+
+###  http://emmo.info/emmo/application/pufoam#EMMO_a960005c-7572-40c1-a28f-f7fc43560243
+:EMMO_a960005c-7572-40c1-a28f-f7fc43560243 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_ae15fb4f_8e4d_41de_a0f9_3997f89ba6a2 ;
+                                           skos:prefLabel "PreExponentialFactor"@en .
+
+
+###  http://emmo.info/emmo/application/pufoam#EMMO_b074a1b1-e2d1-4c35-9de0-3ff00bd1cb90
+:EMMO_b074a1b1-e2d1-4c35-9de0-3ff00bd1cb90 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_68390bfb_e307_479d_8f78_d66d8773cb1d ;
+                                           skos:prefLabel "Isocyanide"@en .
+
+
+###  http://emmo.info/emmo/application/pufoam#EMMO_b3d3542b-ec57-4e91-8f4d-4b5054f9e191
+:EMMO_b3d3542b-ec57-4e91-8f4d-4b5054f9e191 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_1273eb34_de48_43a9_925f_104110469dd2 ;
+                                           skos:prefLabel "UnitOnePerMeter"@en .
+
+
+###  http://emmo.info/emmo/application/pufoam#EMMO_c204c9a2-2ae0-4b74-a75d-d28d199ad2dd
+:EMMO_c204c9a2-2ae0-4b74-a75d-d28d199ad2dd rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_c4e9a5d3_3b5b_4a91_8ba1_36bd468cb799 ;
+                                           skos:prefLabel "ChemicalReaction"@en .
+
+
+###  http://emmo.info/emmo/application/pufoam#EMMO_c9729cd8-a47f-45c5-a957-996b7cb66c27
+:EMMO_c9729cd8-a47f-45c5-a957-996b7cb66c27 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_1273eb34_de48_43a9_925f_104110469dd2 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                             owl:someValuesFrom :DynamicViscosityDimension
+                                                           ] ;
+                                           skos:prefLabel "PascalSeconds"@en .
+
+
+###  http://emmo.info/emmo/application/pufoam#EMMO_f383c655-5d90-498d-87ae-c08c630f5eb7
+:EMMO_f383c655-5d90-498d-87ae-c08c630f5eb7 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_04cf0295_3e8f_4693_a87f_3130d125cf05 ;
+                                           skos:prefLabel "MolecularWeight"@en .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
