@@ -39,12 +39,7 @@ https://creativecommons.org/licenses/by/4.0/legalcode""" .
 ###  http://emmo.info/emmo#EMMO_2487a887-f478-42bd-bdd4-90fc062bb7c2
 :EMMO_2487a887-f478-42bd-bdd4-90fc062bb7c2 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_406f9b74_c927_4e05_b9af_5edbe5e280c5 ,
-                                                           :EMMO_cdad21c7-082c-435a-94fd-318350978c8f ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty :EMMO_60577dea_9019_4537_ac41_80b0fb563d41 ;
-                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                             owl:onClass :EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10
-                                                           ] ;
+                                                           :EMMO_cdad21c7-082c-435a-94fd-318350978c8f ;
                                            skos:prefLabel "DirectorySequence"@en .
 
 
