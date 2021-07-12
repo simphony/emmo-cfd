@@ -34,5 +34,6 @@
         <uri name="http://emmo.info/emmo/1.0.0-beta/application/moldmodelling"  uri="./moldmodelling.ttl"/>
         <uri name="http://emmo.info/emmo/1.0.0-beta/application/cfd_base"       uri="./cfd_base.ttl"/>
         <uri name="http://emmo.info/emmo/1.0.0-beta/application/pufoam"         uri="./pufoam.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta/application/pitzdaily"      uri="./pitzdaily.ttl"/>
     </group>
 </catalog>
