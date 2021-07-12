@@ -14,7 +14,6 @@
                                                        :EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc """EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
                                                     https://creativecommons.org/licenses/by/4.0/legalcode""" .
 
-
 #################################################################
 #    Individuals
 #################################################################
@@ -38,7 +37,8 @@
                        :EMMO_fb7f96de-bc6a-487f-bfd9-1664316d7efe ;
               :EMMO_e1097637_70d2_4895_973f_2396f04fa204 :complex_file_format ,
                                                          :complex_file_name ,
-                                                         :complex_file_path .
+                                                         :complex_file_path ,
+                                                         :triangle_mesh .
 
 
 ###  http://emmo.info/emmo#complex_file_format
@@ -54,7 +54,7 @@
 
 ###  http://emmo.info/emmo#complex_file_path
 :complex_file_path rdf:type owl:NamedIndividual ,
-                            :EMMO_a36f1b91-b2df-424e-afbf-820e1259505d .
+                            <http://emmo.info/emmo/application/filesystem#EMMO_a36f1b91-b2df-424e-afbf-820e1259505d> .
 
 
 ###  http://emmo.info/emmo#filling
@@ -87,7 +87,7 @@
 
 ###  http://emmo.info/emmo#mesh_conversion
 :mesh_conversion rdf:type owl:NamedIndividual ,
-                          :EMMO_de97a7fb-df43-43cb-aad6-96ddbd36c6de;
+                          :EMMO_de97a7fb-df43-43cb-aad6-96ddbd36c6de ;
                  :EMMO_0090db08_8af6_4744_a9a6_5b2f6e554951 :cartesian_mesh ;
                  :EMMO_85e3a5ba_9187_45ef_855f_7f129bf48e95 :triangle_mesh ;
                  :EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1 :gmsh .
