@@ -14,13 +14,15 @@
                                                        :EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc """EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
                                                     https://creativecommons.org/licenses/by/4.0/legalcode""" .
 
+
 #################################################################
 #    Individuals
 #################################################################
 
 ###  http://emmo.info/emmo#cartesian_mesh
 :cartesian_mesh rdf:type owl:NamedIndividual ,
-                         <http://emmo.info/emmo/application/meshing#EMMO_d1efb613-0475-4b84-abee-a94675ac6a34> ;
+                         :EMMO_65ab280a-5f67-472d-8ef2-760729b0f934 ,
+                         :EMMO_d1efb613-0475-4b84-abee-a94675ac6a34 ;
                 :EMMO_0aa934ee_1ad4_4345_8a7f_bc73ec67c7e5 :resolution ;
                 :EMMO_6ef0c509-e53c-4a51-aae5-c6f789371a9b :triangle_mesh .
 
@@ -52,12 +54,7 @@
 
 ###  http://emmo.info/emmo#complex_file_path
 :complex_file_path rdf:type owl:NamedIndividual ,
-                            <http://emmo.info/emmo/application/filesystem#EMMO_a36f1b91-b2df-424e-afbf-820e1259505d> .
-
-
-###  http://emmo.info/emmo#dimension_one
-:dimension_one rdf:type owl:NamedIndividual ,
-                        :EMMO_3227b821_26a5_4c7c_9c01_5c24483e0bd0 .
+                            :EMMO_a36f1b91-b2df-424e-afbf-820e1259505d .
 
 
 ###  http://emmo.info/emmo#filling
@@ -88,6 +85,14 @@
                :EMMO_bc1b794d-bd0a-4aa9-a2ed-f6edc0633f6b .
 
 
+###  http://emmo.info/emmo#mesh_conversion
+:mesh_conversion rdf:type owl:NamedIndividual ,
+                          :EMMO_de97a7fb-df43-43cb-aad6-96ddbd36c6de;
+                 :EMMO_0090db08_8af6_4744_a9a6_5b2f6e554951 :cartesian_mesh ;
+                 :EMMO_85e3a5ba_9187_45ef_855f_7f129bf48e95 :triangle_mesh ;
+                 :EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1 :gmsh .
+
+
 ###  http://emmo.info/emmo#mold
 :mold rdf:type owl:NamedIndividual ,
                :EMMO_22666503-fe5d-4206-b511-eea1106a5c02 ;
@@ -115,28 +120,20 @@
 
 ###  http://emmo.info/emmo#triangle_mesh
 :triangle_mesh rdf:type owl:NamedIndividual ,
-                        <http://emmo.info/emmo/application/meshing#EMMO_e64cbfca-c43a-4f31-a31e-791182c31bdc> ;
+                        :EMMO_e64cbfca-c43a-4f31-a31e-791182c31bdc ;
                :EMMO_6ef0c509-e53c-4a51-aae5-c6f789371a9b :complex .
 
 
 ###  http://emmo.info/emmo#volume_computation
 :volume_computation rdf:type owl:NamedIndividual ,
-                             <http://emmo.info/emmo/application/meshing#VolumeComputation> ;
+                             :EMMO_b4a5fd5f-be68-422c-8c03-55db12370056 ;
                     :EMMO_85e3a5ba_9187_45ef_855f_7f129bf48e95 :triangle_mesh ;
                     :EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1 :gmsh .
 
 
-###  http://emmo.info/emmo/application/mold_complex_mesh#mesh_conversion
-:mesh_conversion rdf:type owl:NamedIndividual ,
-                          <http://emmo.info/emmo/application/meshing#MeshParameterConversion> ;
-                 :EMMO_0090db08_8af6_4744_a9a6_5b2f6e554951 :cartesian_mesh ;
-                 :EMMO_85e3a5ba_9187_45ef_855f_7f129bf48e95 :triangle_mesh ;
-                 :EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1 :gmsh .
-
-
-###  http://emmo.info/emmo/application/mold_complex_mesh#volume_computation_filling
+###  http://emmo.info/emmo#volume_computation_filling
 :volume_computation_filling rdf:type owl:NamedIndividual ,
-                                     <http://emmo.info/emmo/application/meshing#VolumeComputation> ;
+                                     :EMMO_b4a5fd5f-be68-422c-8c03-55db12370056 ;
                             :EMMO_85e3a5ba_9187_45ef_855f_7f129bf48e95 :filling ;
                             :EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1 :gmsh .
 

@@ -20,8 +20,8 @@
 
 ###  http://emmo.info/emmo#cartesian_mesh
 :cartesian_mesh rdf:type owl:NamedIndividual ,
-                         <http://emmo.info/emmo/application/meshing#EMMO_d1efb613-0475-4b84-abee-a94675ac6a34> ,
-                         <http://emmo.info/emmo/application/meshing#StructuredMesh> ;
+                         :EMMO_d1efb613-0475-4b84-abee-a94675ac6a34 ,
+                         :EMMO_65ab280a-5f67-472d-8ef2-760729b0f934 ;
                 :EMMO_0aa934ee_1ad4_4345_8a7f_bc73ec67c7e5 :resolution ;
                 :EMMO_6ef0c509-e53c-4a51-aae5-c6f789371a9b :triangle_mesh .
 
@@ -136,13 +136,13 @@
 
 ###  http://emmo.info/emmo#triangle_mesh
 :triangle_mesh rdf:type owl:NamedIndividual ,
-                        <http://emmo.info/emmo/application/meshing#EMMO_e64cbfca-c43a-4f31-a31e-791182c31bdc> ;
+                     :EMMO_e64cbfca-c43a-4f31-a31e-791182c31bdc ;
                :EMMO_6ef0c509-e53c-4a51-aae5-c6f789371a9b :rectangle .
 
 
 ###  http://emmo.info/emmo/application/channelmesh#mesh_conversion
 :mesh_conversion rdf:type owl:NamedIndividual ,
-                          <http://emmo.info/emmo/application/meshing#MeshParameterConversion> ;
+                          :EMMO_de97a7fb-df43-43cb-aad6-96ddbd36c6de ;
                  :EMMO_0090db08_8af6_4744_a9a6_5b2f6e554951 :cartesian_mesh ;
                  :EMMO_85e3a5ba_9187_45ef_855f_7f129bf48e95 :triangle_mesh ;
                  :EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1 :gmsh .
@@ -150,7 +150,7 @@
 
 ###  http://emmo.info/emmo/application/channelmesh#volume_computation
 :volume_computation rdf:type owl:NamedIndividual ,
-                             <http://emmo.info/emmo/application/meshing#VolumeComputation> ;
+                             :EMMO_b4a5fd5f-be68-422c-8c03-55db12370056 ;
                     :EMMO_85e3a5ba_9187_45ef_855f_7f129bf48e95 :rectangle ;
                     :EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1 :gmsh .
 

@@ -5403,6 +5403,16 @@ A &apos;Perceptual&apos; becomes an &apos;Object&apos;, when it is part of a &ap
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_65ab280a-5f67-472d-8ef2-760729b0f934 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_65ab280a-5f67-472d-8ef2-760729b0f934">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_c46ea85d-3da9-4735-8871-9fef924c6501"/>
+        <owl:disjointWith rdf:resource="http://emmo.info/emmo#EMMO_bde0d521-083b-4e21-a162-836cb4c52369"/>
+        <skos:prefLabel>StructuredMesh</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_668e6ead_1530_40cc_ad5e_24b880edff50 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_668e6ead_1530_40cc_ad5e_24b880edff50">
@@ -8161,6 +8171,28 @@ Wikipedia</emmo:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84>
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_b4a5fd5f-be68-422c-8c03-55db12370056 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_b4a5fd5f-be68-422c-8c03-55db12370056">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_67e2cddc_3dbe_40a0_8662_1f63a184b722"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#EMMO_0090db08_8af6_4744_a9a6_5b2f6e554951"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo#EMMO_f1a51559_aa3d_43a0_9327_918039f0dfed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://emmo.info/emmo#EMMO_b0ee0fea-da8d-4585-b74a-fc959809caea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:prefLabel>VolumeComputation</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_b51fbd00_a857_4132_9711_0ef70e7bdd20 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_b51fbd00_a857_4132_9711_0ef70e7bdd20">
@@ -8525,6 +8557,15 @@ There are also some quantities that cannot be described in terms of the seven ba
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_bde0d521-083b-4e21-a162-836cb4c52369 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_bde0d521-083b-4e21-a162-836cb4c52369">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_c46ea85d-3da9-4735-8871-9fef924c6501"/>
+        <skos:prefLabel>UnstructuredMesh</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_bed2fe4c_dc7e_43a8_8200_6aac44030bff -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_bed2fe4c_dc7e_43a8_8200_6aac44030bff">
@@ -8629,6 +8670,15 @@ is desirable (μm/m, nmol/mol).
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1"/>
         <emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">A coarse dispersion of gas in a solid continuum phase.</emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <skos:prefLabel xml:lang="en">SolidGasSuspension</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_c46ea85d-3da9-4735-8871-9fef924c6501 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_c46ea85d-3da9-4735-8871-9fef924c6501">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_46f0f8df_4dc6_418f_8036_10427a3a288e"/>
+        <skos:prefLabel>Mesh</skos:prefLabel>
     </owl:Class>
     
 
@@ -9066,6 +9116,23 @@ Conductivity is equeal to the resiprocal of resistivity.</rdfs:comment>
         <emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a xml:lang="en">viscosity in the Navier-Stokes equation</emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
         <rdfs:comment xml:lang="en">A &apos;variable&apos; whose value is assumed to be known independently from the equation, but whose value is not explicitated in the equation.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Parameter</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_d1efb613-0475-4b84-abee-a94675ac6a34 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_d1efb613-0475-4b84-abee-a94675ac6a34">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_c46ea85d-3da9-4735-8871-9fef924c6501"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://emmo.info/emmo#EMMO_65ab280a-5f67-472d-8ef2-760729b0f934"/>
+                    <rdf:Description rdf:about="http://emmo.info/emmo#EMMO_bde0d521-083b-4e21-a162-836cb4c52369"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <skos:prefLabel>CartesianMesh</skos:prefLabel>
     </owl:Class>
     
 
@@ -9636,6 +9703,34 @@ For quantititative properties, one possible code that is shared between the scie
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_de97a7fb-df43-43cb-aad6-96ddbd36c6de -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_de97a7fb-df43-43cb-aad6-96ddbd36c6de">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_67e2cddc_3dbe_40a0_8662_1f63a184b722"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#EMMO_0090db08_8af6_4744_a9a6_5b2f6e554951"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo#EMMO_c46ea85d-3da9-4735-8871-9fef924c6501"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#EMMO_85e3a5ba_9187_45ef_855f_7f129bf48e95"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo#EMMO_c46ea85d-3da9-4735-8871-9fef924c6501"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://emmo.info/emmo#EMMO_b0ee0fea-da8d-4585-b74a-fc959809caea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:prefLabel>MeshParameterConversion</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_df6eeb01_1b41_4bd8_9257_a04fbd7cf000 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_df6eeb01_1b41_4bd8_9257_a04fbd7cf000">
@@ -9971,6 +10066,23 @@ f(v0, v1, ..., vn) = g(v0, v1, ..., vn)
 
 where f is the left hand and g the right hand  side expressions and v0, v1, ..., vn are the variables.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Equation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_e64cbfca-c43a-4f31-a31e-791182c31bdc -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_e64cbfca-c43a-4f31-a31e-791182c31bdc">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_c46ea85d-3da9-4735-8871-9fef924c6501"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://emmo.info/emmo#EMMO_65ab280a-5f67-472d-8ef2-760729b0f934"/>
+                    <rdf:Description rdf:about="http://emmo.info/emmo#EMMO_bde0d521-083b-4e21-a162-836cb4c52369"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <skos:prefLabel>TriangleMesh</skos:prefLabel>
     </owl:Class>
     
 
@@ -10978,115 +11090,6 @@ It defines the Kelvin unit in the SI system.</emmo:EMMO_967080e5_2f42_4eb2_a3a9_
     
 
 
-    <!-- http://emmo.info/emmo/application/meshing#EMMO_bde0d521-083b-4e21-a162-836cb4c52369 -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/application/meshing#EMMO_bde0d521-083b-4e21-a162-836cb4c52369">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/meshing#EMMO_c46ea85d-3da9-4735-8871-9fef924c6501"/>
-        <owl:disjointWith rdf:resource="http://emmo.info/emmo/application/meshing#StructuredMesh"/>
-        <skos:prefLabel>UnstructuredMesh</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/application/meshing#EMMO_c46ea85d-3da9-4735-8871-9fef924c6501 -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/application/meshing#EMMO_c46ea85d-3da9-4735-8871-9fef924c6501">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_46f0f8df_4dc6_418f_8036_10427a3a288e"/>
-        <skos:prefLabel>Mesh</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/application/meshing#EMMO_d1efb613-0475-4b84-abee-a94675ac6a34 -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/application/meshing#EMMO_d1efb613-0475-4b84-abee-a94675ac6a34">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/meshing#EMMO_c46ea85d-3da9-4735-8871-9fef924c6501"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://emmo.info/emmo/application/meshing#EMMO_bde0d521-083b-4e21-a162-836cb4c52369"/>
-                    <rdf:Description rdf:about="http://emmo.info/emmo/application/meshing#StructuredMesh"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <skos:prefLabel>CartesianMesh</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/application/meshing#EMMO_e64cbfca-c43a-4f31-a31e-791182c31bdc -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/application/meshing#EMMO_e64cbfca-c43a-4f31-a31e-791182c31bdc">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/meshing#EMMO_c46ea85d-3da9-4735-8871-9fef924c6501"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://emmo.info/emmo/application/meshing#EMMO_bde0d521-083b-4e21-a162-836cb4c52369"/>
-                    <rdf:Description rdf:about="http://emmo.info/emmo/application/meshing#StructuredMesh"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <skos:prefLabel>TriangleMesh</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/application/meshing#MeshParameterConversion -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/application/meshing#MeshParameterConversion">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_67e2cddc_3dbe_40a0_8662_1f63a184b722"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://emmo.info/emmo#EMMO_0090db08_8af6_4744_a9a6_5b2f6e554951"/>
-                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/meshing#EMMO_c46ea85d-3da9-4735-8871-9fef924c6501"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://emmo.info/emmo#EMMO_85e3a5ba_9187_45ef_855f_7f129bf48e95"/>
-                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/meshing#EMMO_c46ea85d-3da9-4735-8871-9fef924c6501"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://emmo.info/emmo#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://emmo.info/emmo#EMMO_b0ee0fea-da8d-4585-b74a-fc959809caea"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/application/meshing#StructuredMesh -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/application/meshing#StructuredMesh">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/meshing#EMMO_c46ea85d-3da9-4735-8871-9fef924c6501"/>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/application/meshing#VolumeComputation -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/application/meshing#VolumeComputation">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_67e2cddc_3dbe_40a0_8662_1f63a184b722"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://emmo.info/emmo#EMMO_0090db08_8af6_4744_a9a6_5b2f6e554951"/>
-                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo#EMMO_f1a51559_aa3d_43a0_9327_918039f0dfed"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://emmo.info/emmo#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://emmo.info/emmo#EMMO_b0ee0fea-da8d-4585-b74a-fc959809caea"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -11113,7 +11116,7 @@ It defines the Kelvin unit in the SI system.</emmo:EMMO_967080e5_2f42_4eb2_a3a9_
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -11138,27 +11141,27 @@ It defines the Kelvin unit in the SI system.</emmo:EMMO_967080e5_2f42_4eb2_a3a9_
     </rdf:Description>
     <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     
 
