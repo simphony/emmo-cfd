@@ -91,13 +91,13 @@
 :length1 rdf:type owl:NamedIndividual ,
                   :EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
          :EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :length1_unit ;
-         :EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :length1_real .
+         :EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :length1_int .
 
 
-###  http://emmo.info/emmo#length1_real
-:length1_real rdf:type owl:NamedIndividual ,
-                       :EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
-              :EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "150.0"^^xsd:double .
+###  http://emmo.info/emmo#length1_int
+:length1_int rdf:type owl:NamedIndividual ,
+                      :EMMO_f8bd64d5_5d3e_4ad4_a46e_c30714fecb7f ;
+             :EMMO_faf79f53_749d_40b2_807c_d34244c192f4 150 .
 
 
 ###  http://emmo.info/emmo#length1_unit
@@ -110,13 +110,13 @@
 :length2 rdf:type owl:NamedIndividual ,
                   :EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
          :EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :length2_unit ;
-         :EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :length2_real .
+         :EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :length2_int .
 
 
-###  http://emmo.info/emmo#length2_real
-:length2_real rdf:type owl:NamedIndividual ,
-                       :EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
-              :EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "930.0"^^xsd:double .
+###  http://emmo.info/emmo#length2_int
+:length2_int rdf:type owl:NamedIndividual ,
+                      :EMMO_f8bd64d5_5d3e_4ad4_a46e_c30714fecb7f ;
+             :EMMO_faf79f53_749d_40b2_807c_d34244c192f4 930 .
 
 
 ###  http://emmo.info/emmo#length2_unit
