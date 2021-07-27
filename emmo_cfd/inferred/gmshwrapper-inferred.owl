@@ -89,6 +89,8 @@ email: emanuele.ghedini@unibo.it</rdfs:comment>
         <terms:abstract xml:lang="en">Defines the formal language of metrology, including theoretical and practical aspects of measurements.
 
 This module is based on the International vocabulary of metrology (VIM) as well as the ISO/IEC 80000 standard.</terms:abstract>
+        <emmo:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+                                                https://creativecommons.org/licenses/by/4.0/legalcode</emmo:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
         <terms:abstract xml:lang="en">The module &apos;siunits&apos; defines the 7 base units and 22 derived units as well as the metric prefixes specified in the SI system.
 
 All additional derived units, SI-based or not, goes into the &apos;units-extension&apos; module.</terms:abstract>
@@ -99,6 +101,9 @@ All additional derived units, SI-based or not, goes into the &apos;units-extensi
         <terms:contributor>Access, DE</terms:contributor>
         <rdfs:comment xml:lang="en">The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
         <terms:title xml:lang="en">International System of Quantities (ISQ)</terms:title>
+        <emmo:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode</emmo:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
         <terms:abstract xml:lang="en">Defines the root of the physicalistic perspective that introduces the concept of real world objects that have a meaning for the ontologist under an applied physics perspective.</terms:abstract>
         <terms:contributor>Gerhard Goldbeck, Goldbeck Consulting Ltd (UK)</terms:contributor>
         <terms:abstract xml:lang="en">The materials module populates the physicalistic perspective with materials subclasses categorised according to modern applied physical sciences.</terms:abstract>
@@ -345,6 +350,16 @@ See the comments of PhysicalDimension for a description of this &quot;regex&quot
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_02b31148-f871-4eb2-b723-51847d40c6f8 -->
+
+    <owl:ObjectProperty rdf:about="http://emmo.info/emmo#EMMO_02b31148-f871-4eb2-b723-51847d40c6f8">
+        <rdfs:subPropertyOf rdf:resource="http://emmo.info/emmo#EMMO_532e7258-9b12-4dd8-b4ee-5b097fab8370"/>
+        <rdfs:range rdf:resource="http://emmo.info/emmo#EMMO_f17133c2_bb33_4ffd_89fa_eef2b403d5e6"/>
+        <skos:prefLabel xml:lang="en">hasNumberOfXElements</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_050b47b6_2583_43f7_95eb_a216b41cd5f6 -->
 
     <owl:ObjectProperty rdf:about="http://emmo.info/emmo#EMMO_050b47b6_2583_43f7_95eb_a216b41cd5f6">
@@ -549,6 +564,16 @@ The quantity is selected without an observation aimed to measure its actual valu
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_532e7258-9b12-4dd8-b4ee-5b097fab8370 -->
+
+    <owl:ObjectProperty rdf:about="http://emmo.info/emmo#EMMO_532e7258-9b12-4dd8-b4ee-5b097fab8370">
+        <rdfs:subPropertyOf rdf:resource="http://emmo.info/emmo#EMMO_b8f79e53_2ad4_441d_87ff_284a5c419e46"/>
+        <rdfs:range rdf:resource="http://emmo.info/emmo#EMMO_f17133c2_bb33_4ffd_89fa_eef2b403d5e6"/>
+        <skos:prefLabel xml:lang="en">hasNumberOfElements</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_54606059-2f53-423f-bfa4-0b215e569fff -->
 
     <owl:ObjectProperty rdf:about="http://emmo.info/emmo#EMMO_54606059-2f53-423f-bfa4-0b215e569fff">
@@ -744,6 +769,16 @@ The label of this class was also changed from PhysicsDimension to PhysicalDimens
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_7333da63-6fde-4e23-a6fb-c832e2065003 -->
+
+    <owl:ObjectProperty rdf:about="http://emmo.info/emmo#EMMO_7333da63-6fde-4e23-a6fb-c832e2065003">
+        <rdfs:subPropertyOf rdf:resource="http://emmo.info/emmo#EMMO_532e7258-9b12-4dd8-b4ee-5b097fab8370"/>
+        <rdfs:range rdf:resource="http://emmo.info/emmo#EMMO_f17133c2_bb33_4ffd_89fa_eef2b403d5e6"/>
+        <skos:prefLabel xml:lang="en">hasNumberOfYElements</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_778137f0-b6c0-4804-aada-0b24dedb3a56 -->
 
     <owl:ObjectProperty rdf:about="http://emmo.info/emmo#EMMO_778137f0-b6c0-4804-aada-0b24dedb3a56">
@@ -753,6 +788,16 @@ The label of this class was also changed from PhysicsDimension to PhysicalDimens
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:range rdf:resource="http://emmo.info/emmo#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
         <skos:prefLabel xml:lang="en">hasLength</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_78c8c64a-fe41-498d-b7e4-576dc0bbfde1 -->
+
+    <owl:ObjectProperty rdf:about="http://emmo.info/emmo#EMMO_78c8c64a-fe41-498d-b7e4-576dc0bbfde1">
+        <rdfs:subPropertyOf rdf:resource="http://emmo.info/emmo#EMMO_532e7258-9b12-4dd8-b4ee-5b097fab8370"/>
+        <rdfs:range rdf:resource="http://emmo.info/emmo#EMMO_f17133c2_bb33_4ffd_89fa_eef2b403d5e6"/>
+        <skos:prefLabel xml:lang="en">hasNumberOfZElements</skos:prefLabel>
     </owl:ObjectProperty>
     
 
@@ -1565,6 +1610,16 @@ On the contrary, the interpreter is an agent recognized by the ontologist. The s
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d"/>
         <emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">The interpreter&apos;s internal representation of the object in a semiosis process.</emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <skos:prefLabel xml:lang="en">Interpretant</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_057d91ec-f907-41b3-b683-a4fe670289e2 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_057d91ec-f907-41b3-b683-a4fe670289e2">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_aca5c517-4e8b-4943-837b-abc60ccb0c34"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_c6c448d3-5c6a-4a4f-910e-0323da228dc3"/>
+        <skos:prefLabel xml:lang="en">CommandFlag</skos:prefLabel>
     </owl:Class>
     
 
@@ -2460,6 +2515,15 @@ This is peculiar to EMMO, where quantities (symbolic) are distinct with properti
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_1cd31fc4-43e3-48aa-a743-2336bc24a2d5 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_1cd31fc4-43e3-48aa-a743-2336bc24a2d5">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_64aba1e5_24b7_4140_8eb4_676c35698e79"/>
+        <skos:prefLabel xml:lang="en">OpenFOAM</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_1d8b370b_c672_4d0c_964e_eaafcbf2f51f -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_1d8b370b_c672_4d0c_964e_eaafcbf2f51f">
@@ -2898,6 +2962,22 @@ e.g. you cannot evaluate the beauty of a person on objective basis.</rdfs:commen
             </owl:Restriction>
         </rdfs:subClassOf>
         <skos:prefLabel xml:lang="en">Zepto</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_25661ffe-3cb9-47ca-8214-1747c41f9fb6 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_25661ffe-3cb9-47ca-8214-1747c41f9fb6">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_c5e896c3-9a19-4242-ba7f-74a8146c1bbf"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#EMMO_60577dea_9019_4537_ac41_80b0fb563d41"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo#EMMO_aca5c517-4e8b-4943-837b-abc60ccb0c34"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:prefLabel xml:lang="en">CommandLineInput</skos:prefLabel>
     </owl:Class>
     
 
@@ -3468,6 +3548,15 @@ e.g. you cannot remove H from H20 without changing the molecule type (essential)
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_33bd4cf3-d6c2-41e7-8293-16ce978389b0 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_33bd4cf3-d6c2-41e7-8293-16ce978389b0">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_cdad21c7-082c-435a-94fd-318350978c8f"/>
+        <skos:prefLabel xml:lang="en">Keyword</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_33e0ac8b_a318_4285_b1de_e95347784632 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_33e0ac8b_a318_4285_b1de_e95347784632">
@@ -3736,6 +3825,28 @@ The use of spatial direct parthood in state definition means that a state cannot
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_3c424d37_cf62_41b1_ac9d_a316f8d113d6">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_f6d0c26a_98b6_4cf8_8632_aa259131faaa"/>
         <skos:prefLabel xml:lang="en">AlgebricOperator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_3c7da577-6506-4056-8380-93ab07261cbb -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_3c7da577-6506-4056-8380-93ab07261cbb">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_67e2cddc_3dbe_40a0_8662_1f63a184b722"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#EMMO_60577dea_9019_4537_ac41_80b0fb563d41"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo#EMMO_25661ffe-3cb9-47ca-8214-1747c41f9fb6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo#EMMO_44bf8de7-3ed4-4007-b7d6-756c4497142d"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:prefLabel xml:lang="en">CommandLineInterfaceProcess</skos:prefLabel>
     </owl:Class>
     
 
@@ -4091,6 +4202,15 @@ A &apos;Process&apos; is not only something that unfolds in time (which is autom
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_b29fd350_39aa_4af7_9459_3faa0544cba6"/>
         <emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">A physics-based model based on a physics equation describing the behaviour of continuum volume.</emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <skos:prefLabel xml:lang="en">ContinuumModel</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_44bf8de7-3ed4-4007-b7d6-756c4497142d -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_44bf8de7-3ed4-4007-b7d6-756c4497142d">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_8681074a_e225_4e38_b586_e85b0f43ce38"/>
+        <skos:prefLabel xml:lang="en">CommandLineInterface</skos:prefLabel>
     </owl:Class>
     
 
@@ -4902,6 +5022,16 @@ Moreover, due to inverse functionality, a &apos;State&apos; can be part of only 
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_543f77d9-4717-4045-99b5-2568e1d73e6e -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_543f77d9-4717-4045-99b5-2568e1d73e6e">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_406f9b74_c927_4e05_b9af_5edbe5e280c5"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_cdad21c7-082c-435a-94fd-318350978c8f"/>
+        <skos:prefLabel xml:lang="en">KeywordSequence</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_548a03bd_b5e3_4a92_ac32_b2cd7bd1d2d2 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_548a03bd_b5e3_4a92_ac32_b2cd7bd1d2d2">
@@ -4946,6 +5076,15 @@ Moreover, due to inverse functionality, a &apos;State&apos; can be part of only 
         <emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">The class of general mathematical symbolic objects respecting mathematical syntactic rules.</emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <rdfs:comment>A mathematical object in this branch is not representing a concept but an actual graphical object built using mathematcal symbols arranged in some way, according to math conventions.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Mathematical</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_55b1de31-cba4-4b21-a237-9c983aae4768 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_55b1de31-cba4-4b21-a237-9c983aae4768">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_67e2cddc_3dbe_40a0_8662_1f63a184b722"/>
+        <skos:prefLabel xml:lang="en">PreProcessing</skos:prefLabel>
     </owl:Class>
     
 
@@ -5427,6 +5566,15 @@ A &apos;Perceptual&apos; becomes an &apos;Object&apos;, when it is part of a &ap
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_c46ea85d-3da9-4735-8871-9fef924c6501"/>
         <owl:disjointWith rdf:resource="http://emmo.info/emmo#EMMO_bde0d521-083b-4e21-a162-836cb4c52369"/>
         <skos:prefLabel>StructuredMesh</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_65f1a9da-d965-4a43-a4ea-6bca1d8e7d71 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_65f1a9da-d965-4a43-a4ea-6bca1d8e7d71">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_67e2cddc_3dbe_40a0_8662_1f63a184b722"/>
+        <skos:prefLabel xml:lang="en">PostProcessing</skos:prefLabel>
     </owl:Class>
     
 
@@ -7795,6 +7943,15 @@ Symbols of a formal language must be capable of being specified without any refe
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_aca5c517-4e8b-4943-837b-abc60ccb0c34 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_aca5c517-4e8b-4943-837b-abc60ccb0c34">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_33bd4cf3-d6c2-41e7-8293-16ce978389b0"/>
+        <skos:prefLabel xml:lang="en">Command</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_acaaa124_3dde_48b6_86e6_6ec6f364f408 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_acaaa124_3dde_48b6_86e6_6ec6f364f408">
@@ -8149,6 +8306,15 @@ Just like an &apos;Elementary&apos; in the &apos;Physical&apos; branch, each &ap
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_9895a1b4_f0a5_4167_ac5e_97db40b8bfcc"/>
         <skos:prefLabel xml:lang="en">LengthDimension</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_b3b2c680-2d77-4474-aba3-fc2d1ae414d7 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_b3b2c680-2d77-4474-aba3-fc2d1ae414d7">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_44bf8de7-3ed4-4007-b7d6-756c4497142d"/>
+        <skos:prefLabel xml:lang="en">Bash</skos:prefLabel>
     </owl:Class>
     
 
@@ -8612,6 +8778,15 @@ There are also some quantities that cannot be described in terms of the seven ba
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_bfac5a6f-9bd9-4eb0-9b27-062f1ec0211a -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_bfac5a6f-9bd9-4eb0-9b27-062f1ec0211a">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_f5a64060_4e3f_4d49_98da_9f41ad8d3ce1"/>
+        <skos:prefLabel xml:lang="en">UseCase</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_c03bab53_fed3_4142_9741_cc7fc806f0a6 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_c03bab53_fed3_4142_9741_cc7fc806f0a6">
@@ -8840,6 +9015,24 @@ e.g. Navier-Stokes or Euler equation applied to the same fluid are an example of
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_c5e896c3-9a19-4242-ba7f-74a8146c1bbf -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_c5e896c3-9a19-4242-ba7f-74a8146c1bbf">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_cdad21c7-082c-435a-94fd-318350978c8f"/>
+        <skos:prefLabel xml:lang="en">DataComposition</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_c6c448d3-5c6a-4a4f-910e-0323da228dc3 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_c6c448d3-5c6a-4a4f-910e-0323da228dc3">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_cdad21c7-082c-435a-94fd-318350978c8f"/>
+        <skos:prefLabel xml:lang="en">Option</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e">
@@ -9015,6 +9208,12 @@ Sodium Chloride</rdfs:comment>
         <rdfs:comment xml:lang="en">Length is a non-negative additive quantity attributed to a one-dimensional object in space.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Length</skos:prefLabel>
     </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_cdad21c7-082c-435a-94fd-318350978c8f -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_cdad21c7-082c-435a-94fd-318350978c8f"/>
     
 
 
@@ -10429,6 +10628,15 @@ We cannot say that H2 molecule has direct part two H atoms, but has direct part 
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_ecc3715c-5906-4ba6-9283-c3c19d5058f3 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_ecc3715c-5906-4ba6-9283-c3c19d5058f3">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_4362d8c4-c332-43d8-bf90-a179b18f6238"/>
+        <skos:prefLabel xml:lang="en">Dictionary</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_ecc4efe9_77a2_47e3_8190_f9a883d54ac6 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_ecc4efe9_77a2_47e3_8190_f9a883d54ac6">
@@ -11143,13 +11351,13 @@ It defines the Kelvin unit in the SI system.</emmo:EMMO_967080e5_2f42_4eb2_a3a9_
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
@@ -11158,10 +11366,10 @@ It defines the Kelvin unit in the SI system.</emmo:EMMO_967080e5_2f42_4eb2_a3a9_
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     
 

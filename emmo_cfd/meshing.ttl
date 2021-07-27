@@ -19,6 +19,13 @@ https://creativecommons.org/licenses/by/4.0/legalcode""" .
 #    Object Properties
 #################################################################
 
+###  http://emmo.info/emmo#EMMO_02b31148-f871-4eb2-b723-51847d40c6f8
+:EMMO_02b31148-f871-4eb2-b723-51847d40c6f8 rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf :EMMO_532e7258-9b12-4dd8-b4ee-5b097fab8370 ;
+                                           rdfs:range :EMMO_f17133c2_bb33_4ffd_89fa_eef2b403d5e6 ;
+                                           skos:prefLabel "hasNumberOfXElements"@en .
+
+
 ###  http://emmo.info/emmo#EMMO_21f72cf9-a823-45b5-8655-5885a583fe70
 :EMMO_21f72cf9-a823-45b5-8655-5885a583fe70 rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf :EMMO_778137f0-b6c0-4804-aada-0b24dedb3a56 ;
@@ -27,6 +34,13 @@ https://creativecommons.org/licenses/by/4.0/legalcode""" .
                                                     owl:IrreflexiveProperty ;
                                            rdfs:range :EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
                                            skos:prefLabel "hasZLength"@en .
+
+
+###  http://emmo.info/emmo#EMMO_532e7258-9b12-4dd8-b4ee-5b097fab8370
+:EMMO_532e7258-9b12-4dd8-b4ee-5b097fab8370 rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf :EMMO_b8f79e53_2ad4_441d_87ff_284a5c419e46 ;
+                                           rdfs:range :EMMO_f17133c2_bb33_4ffd_89fa_eef2b403d5e6 ;
+                                           skos:prefLabel "hasNumberOfElements"@en .
 
 
 ###  http://emmo.info/emmo#EMMO_5e8277cf-9d25-4c43-8cb8-dbe4d59c53ca
@@ -49,6 +63,13 @@ https://creativecommons.org/licenses/by/4.0/legalcode""" .
                                            skos:prefLabel "hasMinimumZCoordinate"@en .
 
 
+###  http://emmo.info/emmo#EMMO_7333da63-6fde-4e23-a6fb-c832e2065003
+:EMMO_7333da63-6fde-4e23-a6fb-c832e2065003 rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf :EMMO_532e7258-9b12-4dd8-b4ee-5b097fab8370 ;
+                                           rdfs:range :EMMO_f17133c2_bb33_4ffd_89fa_eef2b403d5e6 ;
+                                           skos:prefLabel "hasNumberOfYElements"@en .
+
+
 ###  http://emmo.info/emmo#EMMO_778137f0-b6c0-4804-aada-0b24dedb3a56
 :EMMO_778137f0-b6c0-4804-aada-0b24dedb3a56 rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf :EMMO_b8f79e53_2ad4_441d_87ff_284a5c419e46 ;
@@ -57,6 +78,13 @@ https://creativecommons.org/licenses/by/4.0/legalcode""" .
                                                     owl:IrreflexiveProperty ;
                                            rdfs:range :EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
                                            skos:prefLabel "hasLength"@en .
+
+
+###  http://emmo.info/emmo#EMMO_78c8c64a-fe41-498d-b7e4-576dc0bbfde1
+:EMMO_78c8c64a-fe41-498d-b7e4-576dc0bbfde1 rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf :EMMO_532e7258-9b12-4dd8-b4ee-5b097fab8370 ;
+                                           rdfs:range :EMMO_f17133c2_bb33_4ffd_89fa_eef2b403d5e6 ;
+                                           skos:prefLabel "hasNumberOfZElements"@en .
 
 
 ###  http://emmo.info/emmo#EMMO_85e73fcb-acd4-467f-bf87-5c82d8813df1
