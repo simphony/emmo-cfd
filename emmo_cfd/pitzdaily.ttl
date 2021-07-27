@@ -19,11 +19,68 @@
 #    Individuals
 #################################################################
 
+###  http://emmo.info/emmo#bash
+:bash rdf:type owl:NamedIndividual ,
+               :EMMO_b3b2c680-2d77-4474-aba3-fc2d1ae414d7 .
+
+
+###  http://emmo.info/emmo#blockmesh_command
+:blockmesh_command rdf:type owl:NamedIndividual ,
+                            :EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 ;
+                   :EMMO_23b579e1_8088_45b5_9975_064014026c42 "blockMesh" .
+
+
+###  http://emmo.info/emmo#cli_process_blockmesh
+:cli_process_blockmesh rdf:type owl:NamedIndividual ,
+                                :EMMO_0efc8352-1080-4520-baf5-d53e1ca505c0 ,
+                                :EMMO_3c7da577-6506-4056-8380-93ab07261cbb ,
+                                :EMMO_55b1de31-cba4-4b21-a237-9c983aae4768 ;
+                       :EMMO_85e3a5ba_9187_45ef_855f_7f129bf48e95 :blockmesh_command ;
+                       :EMMO_8785be5a_2493_4b12_8f39_31907ab11748 :cli_process_simplefoam ;
+                       :EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1 :bash ,
+                                                                  :openfoam .
+
+
+###  http://emmo.info/emmo#cli_process_simplefoam
+:cli_process_simplefoam rdf:type owl:NamedIndividual ,
+                                 :EMMO_3c7da577-6506-4056-8380-93ab07261cbb ,
+                                 :EMMO_4d947635_13a5_4671_b631_658d3f103b3b ;
+                        :EMMO_85e3a5ba_9187_45ef_855f_7f129bf48e95 :simplefoam_command ;
+                        :EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1 :bash ,
+                                                                   :openfoam .
+
+
 ###  http://emmo.info/emmo#inletpressure
 :inletpressure rdf:type owl:NamedIndividual ,
                         :EMMO_50a44256_9dc5_434b_bad4_74a4d9a29989 ;
                :EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :inletpressure_unit ;
-               :EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :inletpressure_value .
+               :EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :inletpressure_value ;
+               :EMMO_e1097637_70d2_4895_973f_2396f04fa204 :inletpressure_keyword1 .
+
+
+###  http://emmo.info/emmo#inletpressure_keyword1
+:inletpressure_keyword1 rdf:type owl:NamedIndividual ,
+                                 :EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 ;
+                        :EMMO_23b579e1_8088_45b5_9975_064014026c42 "value" .
+
+
+###  http://emmo.info/emmo#inletpressure_keyword2
+:inletpressure_keyword2 rdf:type owl:NamedIndividual ,
+                                 :EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 ;
+                        :EMMO_8785be5a_2493_4b12_8f39_31907ab11748 :inletpressure_keyword1 ;
+                        :EMMO_23b579e1_8088_45b5_9975_064014026c42 "inlet" .
+
+
+###  http://emmo.info/emmo#inletpressure_keyword3
+:inletpressure_keyword3 rdf:type owl:NamedIndividual ,
+                                 :EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 ;
+                        :EMMO_8785be5a_2493_4b12_8f39_31907ab11748 :inletpressure_keyword2 ;
+                        :EMMO_23b579e1_8088_45b5_9975_064014026c42 "boundaryField" .
+
+
+###  http://emmo.info/emmo#inletpressure_unit
+:inletpressure_unit rdf:type owl:NamedIndividual ,
+                             :EMMO_a80dc6f5_b1aa_41a7_a3a8_cd5040da2162 .
 
 
 ###  http://emmo.info/emmo#inletpressure_value
@@ -31,33 +88,87 @@
                               :EMMO_18d180e4_5e3e_42f7_820c_e08951223486 .
 
 
-###  http://emmo.info/emmo#inletvelocity_unit_y
-:inletvelocity_unit_y rdf:type owl:NamedIndividual ,
-                               :EMMO_4a27950a_0d31_4175_bd4e_14995aa94702 .
+###  http://emmo.info/emmo#inletvelocity
+:inletvelocity rdf:type owl:NamedIndividual ,
+                        :EMMO_0329f1f5_8339_4ce4_8505_a264c6d606ba ;
+               :EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :inletvelocity_unit ;
+               :EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :inletvelocity_vector ;
+               :EMMO_e1097637_70d2_4895_973f_2396f04fa204 :inletvelocity_keyword1 .
+
+
+###  http://emmo.info/emmo#inletvelocity_keyword1
+:inletvelocity_keyword1 rdf:type owl:NamedIndividual ,
+                                 :EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 ;
+                        :EMMO_23b579e1_8088_45b5_9975_064014026c42 "value" .
+
+
+###  http://emmo.info/emmo#inletvelocity_keyword2
+:inletvelocity_keyword2 rdf:type owl:NamedIndividual ,
+                                 :EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 ;
+                        :EMMO_8785be5a_2493_4b12_8f39_31907ab11748 :inletvelocity_keyword1 ;
+                        :EMMO_23b579e1_8088_45b5_9975_064014026c42 "inlet" .
+
+
+###  http://emmo.info/emmo#inletvelocity_keyword3
+:inletvelocity_keyword3 rdf:type owl:NamedIndividual ,
+                                 :EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 ;
+                        :EMMO_8785be5a_2493_4b12_8f39_31907ab11748 :inletpressure_keyword2 ;
+                        :EMMO_23b579e1_8088_45b5_9975_064014026c42 "boundaryField" .
+
+
+###  http://emmo.info/emmo#inletvelocity_real_x
+:inletvelocity_real_x rdf:type owl:NamedIndividual ,
+                               :EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+                      :EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "10.0"^^xsd:double .
+
+
+###  http://emmo.info/emmo#inletvelocity_real_y
+:inletvelocity_real_y rdf:type owl:NamedIndividual ,
+                               :EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+                      :EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "0.0"^^xsd:double .
+
+
+###  http://emmo.info/emmo#inletvelocity_real_z
+:inletvelocity_real_z rdf:type owl:NamedIndividual ,
+                               :EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+                      :EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "0.0"^^xsd:double .
+
+
+###  http://emmo.info/emmo#inletvelocity_unit
+:inletvelocity_unit rdf:type owl:NamedIndividual ,
+                             :EMMO_4a27950a_0d31_4175_bd4e_14995aa94702 .
 
 
 ###  http://emmo.info/emmo#inletvelocity_vector
 :inletvelocity_vector rdf:type owl:NamedIndividual ,
                                :EMMO_2ff07b07_c447_490f_903a_f6a72a12d7bf ;
-                      :EMMO_050b47b6_2583_43f7_95eb_a216b41cd5f6 :inletvelocity_z ;
-                      :EMMO_2a9fcd79_bc67_4b1a_8e64_9dfe505a0007 :inletvelocity_x ;
-                      :EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe :inletvelocity_y ;
-                      :EMMO_e1097637_70d2_4895_973f_2396f04fa204 :inletpressure_keyword1 .
+                      :EMMO_050b47b6_2583_43f7_95eb_a216b41cd5f6 :inletvelocity_real_z ;
+                      :EMMO_2a9fcd79_bc67_4b1a_8e64_9dfe505a0007 :inletvelocity_real_x ;
+                      :EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe :inletvelocity_real_y .
 
 
-###  http://emmo.info/emmo#inletvelocity_x
-:inletvelocity_x rdf:type owl:NamedIndividual ,
-                          :EMMO_0329f1f5_8339_4ce4_8505_a264c6d606ba ;
-                 :EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :inletvelocity_unit_x ;
-                 :EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :inletvelocity_real_x .
+###  http://emmo.info/emmo#iteration_number
+:iteration_number rdf:type owl:NamedIndividual ,
+                           :EMMO_21f56795_ee72_4858_b571_11cfaa59c1a8 .
+
+
+###  http://emmo.info/emmo#openfoam
+:openfoam rdf:type owl:NamedIndividual ,
+                   :EMMO_1cd31fc4-43e3-48aa-a743-2336bc24a2d5 .
 
 
 ###  http://emmo.info/emmo#pressurefile
 :pressurefile rdf:type owl:NamedIndividual ,
                        :EMMO_fb7f96de-bc6a-487f-bfd9-1664316d7efe ;
-              :EMMO_e1097637_70d2_4895_973f_2396f04fa204 :pressurefile_name ,
-                                                         :step0_folder ,
-                                                         :pressurefile_content .
+              :EMMO_e1097637_70d2_4895_973f_2396f04fa204 :pressurefile_content ,
+                                                         :pressurefile_name ,
+                                                         :step0_folder .
+
+
+###  http://emmo.info/emmo#pressurefile_content
+:pressurefile_content rdf:type owl:NamedIndividual ,
+                               :EMMO_89a0c87c_0804_4013_937a_6fe234d9499c ;
+                      :EMMO_2a9fcd79_bc67_4b1a_8e64_9dfe505a0007 :inletpressure_keyword3 .
 
 
 ###  http://emmo.info/emmo#pressurefile_name
@@ -66,100 +177,19 @@
                    :EMMO_23b579e1_8088_45b5_9975_064014026c42 "p" .
 
 
+###  http://emmo.info/emmo#simplefoam_command
+:simplefoam_command rdf:type owl:NamedIndividual ,
+                             :EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 ;
+                    :EMMO_23b579e1_8088_45b5_9975_064014026c42 "simpleFoam" .
+
+
 ###  http://emmo.info/emmo#step0_folder
 :step0_folder rdf:type owl:NamedIndividual ,
                        :EMMO_a36f1b91-b2df-424e-afbf-820e1259505d ;
-              :EMMO_23b579e1_8088_45b5_9975_064014026c42 0 .
+              :EMMO_23b579e1_8088_45b5_9975_064014026c42 "0"^^xsd:string .
 
 
-###  http://emmo.info/emmo#water
-:water rdf:type owl:NamedIndividual ,
-                :EMMO_f0855939_03c5_490c_a87d_a18bf525b5f6 ;
-       :EMMO_0aa934ee_1ad4_4345_8a7f_bc73ec67c7e5 :inletpressure ,
-                                                  :inletvelocity_x .
-
-
-###  http://emmo.info/emmo/application/pitzdaily#inletpressure_keyword1
-:inletpressure_keyword1 rdf:type owl:NamedIndividual ,
-                                 :EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 ;
-                        :EMMO_23b579e1_8088_45b5_9975_064014026c42 "value" .
-
-
-###  http://emmo.info/emmo/application/pitzdaily#inletpressure_keyword2
-:inletpressure_keyword2 rdf:type owl:NamedIndividual ,
-                                 :EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 ;
-                        :EMMO_8785be5a_2493_4b12_8f39_31907ab11748 :inletpressure_keyword1 ;
-                        :EMMO_23b579e1_8088_45b5_9975_064014026c42 "inlet" .
-
-
-###  http://emmo.info/emmo/application/pitzdaily#inletpressure_keyword3
-:inletpressure_keyword3 rdf:type owl:NamedIndividual ,
-                                 :EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 ;
-                        :EMMO_8785be5a_2493_4b12_8f39_31907ab11748 :inletpressure_keyword2 ;
-                        :EMMO_23b579e1_8088_45b5_9975_064014026c42 "boundaryField" .
-
-
-###  http://emmo.info/emmo/application/pitzdaily#inletpressure_unit
-:inletpressure_unit rdf:type owl:NamedIndividual ,
-                             :EMMO_a80dc6f5_b1aa_41a7_a3a8_cd5040da2162 .
-
-
-###  http://emmo.info/emmo/application/pitzdaily#inletvelocity_real_x
-:inletvelocity_real_x rdf:type owl:NamedIndividual ,
-                               :EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
-                      :EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "10.0"^^xsd:double .
-
-
-###  http://emmo.info/emmo/application/pitzdaily#inletvelocity_real_y
-:inletvelocity_real_y rdf:type owl:NamedIndividual ,
-                               :EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
-                      :EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "0.0"^^xsd:double .
-
-
-###  http://emmo.info/emmo/application/pitzdaily#inletvelocity_real_z
-:inletvelocity_real_z rdf:type owl:NamedIndividual ,
-                               :EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
-                      :EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "0.0"^^xsd:double .
-
-
-###  http://emmo.info/emmo/application/pitzdaily#inletvelocity_unit_x
-:inletvelocity_unit_x rdf:type owl:NamedIndividual ,
-                               :EMMO_4a27950a_0d31_4175_bd4e_14995aa94702 .
-
-
-###  http://emmo.info/emmo/application/pitzdaily#inletvelocity_unit_z
-:inletvelocity_unit_z rdf:type owl:NamedIndividual ,
-                               :EMMO_4a27950a_0d31_4175_bd4e_14995aa94702 .
-
-
-###  http://emmo.info/emmo/application/pitzdaily#inletvelocity_y
-:inletvelocity_y rdf:type owl:NamedIndividual ,
-                          :EMMO_0329f1f5_8339_4ce4_8505_a264c6d606ba ;
-                 :EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :inletvelocity_unit_y ;
-                 :EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :inletvelocity_real_y .
-
-
-###  http://emmo.info/emmo/application/pitzdaily#inletvelocity_z
-:inletvelocity_z rdf:type owl:NamedIndividual ,
-                          :EMMO_0329f1f5_8339_4ce4_8505_a264c6d606ba ;
-                 :EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :inletvelocity_unit_z ;
-                 :EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :inletvelocity_real_z .
-
-
-###  http://emmo.info/emmo/application/pitzdaily#iteration_number
-:iteration_number rdf:type owl:NamedIndividual ,
-                           :EMMO_21f56795_ee72_4858_b571_11cfaa59c1a8 .
-
-
-###  http://emmo.info/emmo/application/pitzdaily#pressurefile_content
-:pressurefile_content rdf:type owl:NamedIndividual ,
-                               :EMMO_89a0c87c_0804_4013_937a_6fe234d9499c ;
-                      :EMMO_050b47b6_2583_43f7_95eb_a216b41cd5f6 :inletpressure_keyword1 ;
-                      :EMMO_2a9fcd79_bc67_4b1a_8e64_9dfe505a0007 :inletpressure_keyword3 ;
-                      :EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe :inletpressure_keyword2 .
-
-
-###  http://emmo.info/emmo/application/pitzdaily#velocity_file
+###  http://emmo.info/emmo#velocity_file
 :velocity_file rdf:type owl:NamedIndividual ,
                         :EMMO_fb7f96de-bc6a-487f-bfd9-1664316d7efe ;
                :EMMO_e1097637_70d2_4895_973f_2396f04fa204 :step0_folder ,
@@ -167,14 +197,28 @@
                                                           :velocityfile_name .
 
 
-###  http://emmo.info/emmo/application/pitzdaily#velocityfile_content
+###  http://emmo.info/emmo#velocityfile_content
 :velocityfile_content rdf:type owl:NamedIndividual ,
-                               :EMMO_89a0c87c_0804_4013_937a_6fe234d9499c .
+                               :EMMO_89a0c87c_0804_4013_937a_6fe234d9499c ;
+                      :EMMO_2a9fcd79_bc67_4b1a_8e64_9dfe505a0007 :inletvelocity_keyword3 .
 
 
-###  http://emmo.info/emmo/application/pitzdaily#velocityfile_name
+###  http://emmo.info/emmo#velocityfile_name
 :velocityfile_name rdf:type owl:NamedIndividual ,
                             :EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 .
+
+
+###  http://emmo.info/emmo#water
+:water rdf:type owl:NamedIndividual ,
+                :EMMO_f0855939_03c5_490c_a87d_a18bf525b5f6 ;
+       :EMMO_0aa934ee_1ad4_4345_8a7f_bc73ec67c7e5 :inletpressure ,
+                                                  :inletvelocity .
+
+
+###  http://emmo.info/emmo#workflow
+:workflow rdf:type owl:NamedIndividual ,
+                   :EMMO_f5a64060_4e3f_4d49_98da_9f41ad8d3ce1 ;
+          :EMMO_2a9fcd79_bc67_4b1a_8e64_9dfe505a0007 :cli_process_blockmesh .
 
 
 ###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
