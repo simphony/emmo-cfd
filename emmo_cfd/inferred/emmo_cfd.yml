@@ -1,5 +1,5 @@
 identifier: emmo
-ontology_file: gmshwrapper-inferred.owl
+ontology_file: emmo_cfd-inferred.owl
 reference_by_label: True
 namespaces:
     emmo: http://emmo.info/emmo
