@@ -531,6 +531,16 @@ The quantity is selected without an observation aimed to measure its actual valu
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_4c6a2ddd-8faf-46c7-9780-03d62ecd30fc -->
+
+    <owl:ObjectProperty rdf:about="http://emmo.info/emmo#EMMO_4c6a2ddd-8faf-46c7-9780-03d62ecd30fc">
+        <rdfs:subPropertyOf rdf:resource="http://emmo.info/emmo#EMMO_39c3815d_8cae_4c8f_b2ff_eeba24bec455"/>
+        <rdfs:range rdf:resource="http://emmo.info/emmo#EMMO_bfac5a6f-9bd9-4eb0-9b27-062f1ec0211a"/>
+        <rdfs:label>hasUseCase</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_517dfaf9_4970_41ac_81ee_d031627d2c7c -->
 
     <owl:ObjectProperty rdf:about="http://emmo.info/emmo#EMMO_517dfaf9_4970_41ac_81ee_d031627d2c7c">
@@ -8892,7 +8902,7 @@ There are also some quantities that cannot be described in terms of the seven ba
     <!-- http://emmo.info/emmo#EMMO_bfac5a6f-9bd9-4eb0-9b27-062f1ec0211a -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_bfac5a6f-9bd9-4eb0-9b27-062f1ec0211a">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_f5a64060_4e3f_4d49_98da_9f41ad8d3ce1"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_d7788d1a_020d_4c78_85a1_13563fcec168"/>
         <skos:prefLabel xml:lang="en">UseCase</skos:prefLabel>
     </owl:Class>
     
@@ -11432,7 +11442,31 @@ It defines the Kelvin unit in the SI system.</emmo:EMMO_967080e5_2f42_4eb2_a3a9_
         <skos:prefLabel xml:lang="en">Universe</skos:prefLabel>
     </owl:NamedIndividual>
     <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
@@ -11457,30 +11491,6 @@ It defines the Kelvin unit in the SI system.</emmo:EMMO_967080e5_2f42_4eb2_a3a9_
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
     </rdf:Description>
     
 

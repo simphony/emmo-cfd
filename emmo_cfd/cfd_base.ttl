@@ -15,6 +15,17 @@
                                                 https://creativecommons.org/licenses/by/4.0/legalcode""" .
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  http://emmo.info/emmo#EMMO_4c6a2ddd-8faf-46c7-9780-03d62ecd30fc
+:EMMO_4c6a2ddd-8faf-46c7-9780-03d62ecd30fc rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf :EMMO_39c3815d_8cae_4c8f_b2ff_eeba24bec455 ;
+                                           rdfs:range :EMMO_bfac5a6f-9bd9-4eb0-9b27-062f1ec0211a ;
+                                           rdfs:label "hasUseCase" .
+
+
+#################################################################
 #    Classes
 #################################################################
 
@@ -64,7 +75,7 @@
 
 ###  http://emmo.info/emmo#EMMO_bfac5a6f-9bd9-4eb0-9b27-062f1ec0211a
 :EMMO_bfac5a6f-9bd9-4eb0-9b27-062f1ec0211a rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_f5a64060_4e3f_4d49_98da_9f41ad8d3ce1 ;
+                                           rdfs:subClassOf :EMMO_d7788d1a_020d_4c78_85a1_13563fcec168 ;
                                            skos:prefLabel "UseCase"@en .
 
 
