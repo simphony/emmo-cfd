@@ -122,7 +122,7 @@
 ###  http://emmo.info/emmo#outletvelocity_keyword3
 :outletvelocity_keyword3 rdf:type owl:NamedIndividual ,
                                   :EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 ;
-                         :EMMO_8785be5a_2493_4b12_8f39_31907ab11748 :inletpressure_keyword2 ;
+                         :EMMO_8785be5a_2493_4b12_8f39_31907ab11748 :outletvelocity_keyword2 ;
                          :EMMO_23b579e1_8088_45b5_9975_064014026c42 "boundaryField" .
 
 
