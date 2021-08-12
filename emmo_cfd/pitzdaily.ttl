@@ -81,12 +81,14 @@
 ###  http://emmo.info/emmo#inletvelocity_real_x
 :inletvelocity_real_x rdf:type owl:NamedIndividual ,
                                :EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+                      :EMMO_8785be5a_2493_4b12_8f39_31907ab11748 :inletvelocity_real_y ;
                       :EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "10.0"^^xsd:double .
 
 
 ###  http://emmo.info/emmo#inletvelocity_real_y
 :inletvelocity_real_y rdf:type owl:NamedIndividual ,
                                :EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+                      :EMMO_8785be5a_2493_4b12_8f39_31907ab11748 :inletvelocity_real_z ;
                       :EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "0.0"^^xsd:double .
 
 
@@ -105,8 +107,7 @@
 :inletvelocity_vector rdf:type owl:NamedIndividual ,
                                :EMMO_2ff07b07_c447_490f_903a_f6a72a12d7bf ;
                       :EMMO_050b47b6_2583_43f7_95eb_a216b41cd5f6 :inletvelocity_real_z ;
-                      :EMMO_2a9fcd79_bc67_4b1a_8e64_9dfe505a0007 :inletvelocity_real_x ;
-                      :EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe :inletvelocity_real_y .
+                      :EMMO_2a9fcd79_bc67_4b1a_8e64_9dfe505a0007 :inletvelocity_real_x .
 
 
 ###  http://emmo.info/emmo#iteration_number
@@ -168,6 +169,7 @@
 ###  http://emmo.info/emmo#pressurefile_content
 :pressurefile_content rdf:type owl:NamedIndividual ,
                                :EMMO_89a0c87c_0804_4013_937a_6fe234d9499c ;
+                      :EMMO_050b47b6_2583_43f7_95eb_a216b41cd5f6 :outletpressure_keyword1 ;
                       :EMMO_2a9fcd79_bc67_4b1a_8e64_9dfe505a0007 :outletpressure_keyword3 .
 
 
@@ -212,6 +214,7 @@
 ###  http://emmo.info/emmo#velocityfile_content
 :velocityfile_content rdf:type owl:NamedIndividual ,
                                :EMMO_89a0c87c_0804_4013_937a_6fe234d9499c ;
+                      :EMMO_050b47b6_2583_43f7_95eb_a216b41cd5f6 :inletvelocity_keyword1 ;
                       :EMMO_2a9fcd79_bc67_4b1a_8e64_9dfe505a0007 :inletvelocity_keyword3 .
 
 
