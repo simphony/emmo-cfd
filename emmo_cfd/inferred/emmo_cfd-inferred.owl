@@ -2180,6 +2180,15 @@ kg/m^3</emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_14aef6af_aacc_4a81_80b6_6d099497b201 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_14aef6af_aacc_4a81_80b6_6d099497b201">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_be437e75_ee49_4308_a0f6_97f27c9f1cc5"/>
+        <rdfs:label xml:lang="de">Host</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_14ff4393_0f28_4fb4_abc7_c2cc00bc761d -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_14ff4393_0f28_4fb4_abc7_c2cc00bc761d">
@@ -3205,6 +3214,15 @@ See Shape4x3Matrix as an example.</rdfs:comment>
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_298644cb_838b_4fa5_bfa7_eec2a19429ef -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_298644cb_838b_4fa5_bfa7_eec2a19429ef">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_1cba0b27_15d0_4326_933f_379d0b3565b6"/>
+        <rdfs:label xml:lang="de">Table</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_29afdf54_90ae_4c98_8845_fa9ea3f143a8 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_29afdf54_90ae_4c98_8845_fa9ea3f143a8">
@@ -3668,6 +3686,16 @@ The use of spatial direct parthood in state definition means that a state cannot
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_3737baeb_2632_431b_949c_7b7170e92652">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_6a42d593_1b18_4d7d_aa87_f290f9c40496"/>
         <skos:prefLabel xml:lang="en">RateCoefficients</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_37b6824a_949e_41fe_80c4_9673760d3c4e -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_37b6824a_949e_41fe_80c4_9673760d3c4e">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_8681074a_e225_4e38_b586_e85b0f43ce38"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_89a0c87c_0804_4013_937a_6fe234d9499c"/>
+        <rdfs:label xml:lang="de">DataBase</rdfs:label>
     </owl:Class>
     
 
@@ -6133,6 +6161,15 @@ Here the class &apos;Field&apos; refers to the quantum field of massless bosonic
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_74b05aed_66bf_43c8_aa2c_752a9ca8be03">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_a1083d0a_c1fb_471f_8e20_a98f881ad527"/>
         <skos:prefLabel xml:lang="en">Numeral</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_74be8686_64fa_4520_84d1_fe9a48a7495d -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_74be8686_64fa_4520_84d1_fe9a48a7495d">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_be437e75_ee49_4308_a0f6_97f27c9f1cc5"/>
+        <rdfs:label xml:lang="de">Port</rdfs:label>
     </owl:Class>
     
 
@@ -8880,6 +8917,16 @@ There are also some quantities that cannot be described in terms of the seven ba
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_be437e75_ee49_4308_a0f6_97f27c9f1cc5 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_be437e75_ee49_4308_a0f6_97f27c9f1cc5">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_37b6824a_949e_41fe_80c4_9673760d3c4e"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba"/>
+        <rdfs:label xml:lang="de">DataBaseProperty</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_bed2fe4c_dc7e_43a8_8200_6aac44030bff -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_bed2fe4c_dc7e_43a8_8200_6aac44030bff">
@@ -9220,6 +9267,15 @@ e.g. Navier-Stokes or Euler equation applied to the same fluid are an example of
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_c97fe562_3306_403d_8c88_d49f3ad5ec5e -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_c97fe562_3306_403d_8c88_d49f3ad5ec5e">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_28fbea28_2204_4613_87ff_6d877b855fcd"/>
+        <rdfs:label xml:lang="de">Column</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88">
@@ -9433,6 +9489,15 @@ Conductivity is equeal to the resiprocal of resistivity.</rdfs:comment>
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_d075c70e_364f_429a_8d29_ca8ecc43a144 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_d075c70e_364f_429a_8d29_ca8ecc43a144">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_8681074a_e225_4e38_b586_e85b0f43ce38"/>
+        <rdfs:label xml:lang="de">InternetProtocol</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81">
@@ -9500,6 +9565,16 @@ Conductivity is equeal to the resiprocal of resistivity.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_a1083d0a_c1fb_471f_8e20_a98f881ad527"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_abf7efbe_6b04_41b8_8326_4dd0f6be753e"/>
         <skos:prefLabel xml:lang="en">ChemicalSymbol</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_d3e91500_1e42_4732_b49d_b970518ce3db -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_d3e91500_1e42_4732_b49d_b970518ce3db">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_d075c70e_364f_429a_8d29_ca8ecc43a144"/>
+        <rdfs:label xml:lang="de">IPAdress</rdfs:label>
     </owl:Class>
     
 
@@ -11445,31 +11520,31 @@ It defines the Kelvin unit in the SI system.</emmo:EMMO_967080e5_2f42_4eb2_a3a9_
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>

@@ -1,0 +1,86 @@
+@prefix : <http://emmo.info/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://emmo.info/emmo/application/pitzdaily_input_source> .
+
+<http://emmo.info/emmo/application/pitzdaily_input_source> rdf:type owl:Ontology ;
+                                                            owl:versionIRI <http://emmo.info/emmo/1.0.0-beta/application/pitzdaily_input_source> ;
+                                                            owl:imports <http://emmo.info/emmo/1.0.0-beta/application/filesystem> ;
+                                                            :EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc """EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+                                                    https://creativecommons.org/licenses/by/4.0/legalcode""" .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://emmo.info/emmo#EMMO_44deaad5_08e2_4348_a210_b808a5704893
+:EMMO_44deaad5_08e2_4348_a210_b808a5704893 rdf:type owl:NamedIndividual ,
+                                                    :EMMO_c97fe562_3306_403d_8c88_d49f3ad5ec5e ;
+                                           :EMMO_54606059-2f53-423f-bfa4-0b215e569fff :EMMO_e6e5d85e_b9bb_487b_a068_0358a92b1f80 ;
+                                           rdfs:label "velocity_column"@de .
+
+
+###  http://emmo.info/emmo#EMMO_8f47e2bc_b27c_43e8_91b5_ad10990d24a5
+:EMMO_8f47e2bc_b27c_43e8_91b5_ad10990d24a5 rdf:type owl:NamedIndividual ,
+                                                    :EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 ;
+                                           :EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "outlet_pressure" ;
+                                           rdfs:label "pressure_column_name"@de .
+
+
+###  http://emmo.info/emmo#EMMO_97d14451_0fa2_4175_aac8_c0143364c8bd
+:EMMO_97d14451_0fa2_4175_aac8_c0143364c8bd rdf:type owl:NamedIndividual ,
+                                                    :EMMO_d3e91500_1e42_4732_b49d_b970518ce3db ;
+                                           :EMMO_23b579e1_8088_45b5_9975_064014026c42 "0.0.0.0" ;
+                                           rdfs:label "ipadress"@de .
+
+
+###  http://emmo.info/emmo#EMMO_b5058432_3a5a_40cb_9cb0_59c2b14f10e4
+:EMMO_b5058432_3a5a_40cb_9cb0_59c2b14f10e4 rdf:type owl:NamedIndividual ,
+                                                    :EMMO_c97fe562_3306_403d_8c88_d49f3ad5ec5e ;
+                                           rdfs:label "pressure_column"@de .
+
+
+###  http://emmo.info/emmo#EMMO_c301b43a_831b_44a0_8c1c_ebf7305fad15
+:EMMO_c301b43a_831b_44a0_8c1c_ebf7305fad15 rdf:type owl:NamedIndividual ,
+                                                    :EMMO_f8bd64d5_5d3e_4ad4_a46e_c30714fecb7f ;
+                                           :EMMO_faf79f53_749d_40b2_807c_d34244c192f4 9000 ;
+                                           rdfs:label "port_number"@de .
+
+
+###  http://emmo.info/emmo#EMMO_de5c7e05_6c47_478b_9960_3d3fee6ccd85
+:EMMO_de5c7e05_6c47_478b_9960_3d3fee6ccd85 rdf:type owl:NamedIndividual ,
+                                                    :EMMO_14aef6af_aacc_4a81_80b6_6d099497b201 ;
+                                           :EMMO_54606059-2f53-423f-bfa4-0b215e569fff :EMMO_97d14451_0fa2_4175_aac8_c0143364c8bd ;
+                                           rdfs:label "host"@de .
+
+
+###  http://emmo.info/emmo#EMMO_e6e5d85e_b9bb_487b_a068_0358a92b1f80
+:EMMO_e6e5d85e_b9bb_487b_a068_0358a92b1f80 rdf:type owl:NamedIndividual ,
+                                                    :EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 ;
+                                           :EMMO_23b579e1_8088_45b5_9975_064014026c42 "inlet_velocity" ;
+                                           rdfs:label "velocity_column_name" .
+
+
+###  http://emmo.info/emmo#EMMO_ea52594b_26e3_4803_af08_1f1e5a4e6ad7
+:EMMO_ea52594b_26e3_4803_af08_1f1e5a4e6ad7 rdf:type owl:NamedIndividual ,
+                                                    :EMMO_298644cb_838b_4fa5_bfa7_eec2a19429ef ;
+                                           :EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe :EMMO_44deaad5_08e2_4348_a210_b808a5704893 ,
+                                                                                      :EMMO_b5058432_3a5a_40cb_9cb0_59c2b14f10e4 ;
+                                           :EMMO_e1097637_70d2_4895_973f_2396f04fa204 :EMMO_de5c7e05_6c47_478b_9960_3d3fee6ccd85 ,
+                                                                                      :EMMO_ed3a6cc7_d3d1_442d_ad77_7282e35b8fb0 ;
+                                           rdfs:label "table"@de .
+
+
+###  http://emmo.info/emmo#EMMO_ed3a6cc7_d3d1_442d_ad77_7282e35b8fb0
+:EMMO_ed3a6cc7_d3d1_442d_ad77_7282e35b8fb0 rdf:type owl:NamedIndividual ,
+                                                    :EMMO_74be8686_64fa_4520_84d1_fe9a48a7495d ;
+                                           :EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :EMMO_c301b43a_831b_44a0_8c1c_ebf7305fad15 ;
+                                           rdfs:label "port"@de .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

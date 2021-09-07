@@ -36,10 +36,29 @@ https://creativecommons.org/licenses/by/4.0/legalcode""" .
 #    Classes
 #################################################################
 
+###  http://emmo.info/emmo#EMMO_14aef6af_aacc_4a81_80b6_6d099497b201
+:EMMO_14aef6af_aacc_4a81_80b6_6d099497b201 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_be437e75_ee49_4308_a0f6_97f27c9f1cc5 ;
+                                           rdfs:label "Host"@de .
+
+
 ###  http://emmo.info/emmo#EMMO_18b8f95f-169e-4a01-b339-b5fb5bb080c9
 :EMMO_18b8f95f-169e-4a01-b339-b5fb5bb080c9 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_8681074a_e225_4e38_b586_e85b0f43ce38 ;
                                            skos:prefLabel "URI" .
+
+
+###  http://emmo.info/emmo#EMMO_298644cb_838b_4fa5_bfa7_eec2a19429ef
+:EMMO_298644cb_838b_4fa5_bfa7_eec2a19429ef rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_1cba0b27_15d0_4326_933f_379d0b3565b6 ;
+                                           rdfs:label "Table"@de .
+
+
+###  http://emmo.info/emmo#EMMO_37b6824a_949e_41fe_80c4_9673760d3c4e
+:EMMO_37b6824a_949e_41fe_80c4_9673760d3c4e rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_8681074a_e225_4e38_b586_e85b0f43ce38 ,
+                                                           :EMMO_89a0c87c_0804_4013_937a_6fe234d9499c ;
+                                           rdfs:label "DataBase"@de .
 
 
 ###  http://emmo.info/emmo#EMMO_4362d8c4-c332-43d8-bf90-a179b18f6238
@@ -74,6 +93,12 @@ https://creativecommons.org/licenses/by/4.0/legalcode""" .
                                            skos:prefLabel "STL"@en .
 
 
+###  http://emmo.info/emmo#EMMO_74be8686_64fa_4520_84d1_fe9a48a7495d
+:EMMO_74be8686_64fa_4520_84d1_fe9a48a7495d rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_be437e75_ee49_4308_a0f6_97f27c9f1cc5 ;
+                                           rdfs:label "Port"@de .
+
+
 ###  http://emmo.info/emmo#EMMO_93b92b77-9e4c-4729-be93-45d360c5e8b4
 :EMMO_93b92b77-9e4c-4729-be93-45d360c5e8b4 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_f23b0ae0-2263-4b6b-a6ca-3ae99a31d8ef ;
@@ -84,6 +109,32 @@ https://creativecommons.org/licenses/by/4.0/legalcode""" .
 :EMMO_a36f1b91-b2df-424e-afbf-820e1259505d rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_f52f3dee-92b6-4219-a2d9-8a80b9b2e7b3 ;
                                            skos:prefLabel "UnixPath"@en .
+
+
+###  http://emmo.info/emmo#EMMO_be437e75_ee49_4308_a0f6_97f27c9f1cc5
+:EMMO_be437e75_ee49_4308_a0f6_97f27c9f1cc5 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_37b6824a_949e_41fe_80c4_9673760d3c4e ,
+                                                           :EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba ;
+                                           rdfs:label "DataBaseProperty"@de .
+
+
+###  http://emmo.info/emmo#EMMO_c97fe562_3306_403d_8c88_d49f3ad5ec5e
+:EMMO_c97fe562_3306_403d_8c88_d49f3ad5ec5e rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_28fbea28_2204_4613_87ff_6d877b855fcd ;
+                                           rdfs:label "Column"@de .
+
+
+###  http://emmo.info/emmo#EMMO_d075c70e_364f_429a_8d29_ca8ecc43a144
+:EMMO_d075c70e_364f_429a_8d29_ca8ecc43a144 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_8681074a_e225_4e38_b586_e85b0f43ce38 ;
+                                           rdfs:label "InternetProtocol"@de .
+
+
+###  http://emmo.info/emmo#EMMO_d3e91500_1e42_4732_b49d_b970518ce3db
+:EMMO_d3e91500_1e42_4732_b49d_b970518ce3db rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 ,
+                                                           :EMMO_d075c70e_364f_429a_8d29_ca8ecc43a144 ;
+                                           rdfs:label "IPAdress"@de .
 
 
 ###  http://emmo.info/emmo#EMMO_f23b0ae0-2263-4b6b-a6ca-3ae99a31d8ef
